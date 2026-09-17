@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Support | InvestX</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sopport.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            InvestX
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="pricing.html">
+                Pricing
+            </a>
+
+            <a href="support.html">
+                Support
+            </a>
+
+        </nav>
+
+        <button
+            class="login-btn"
+            onclick="showMessage()">
+
+            Get Started
+
+        </button>
+
+    </header>
+
+
+    <!-- Support Hero -->
+
+    <section class="support-hero">
+
+        <div class="support-hero-content">
+
+            <p class="small-title">
+                INVESTX SUPPORT
+            </p>
+
+            <h1>
+                How can we
+                <span>help you?</span>
+            </h1>
+
+            <p>
+                Find answers to common questions or
+                contact our support team.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Search -->
+
+    <section class="support-search">
+
+        <h2>
+            Search for help
+        </h2>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search your question..."
+                onkeyup="searchFAQ()">
+
+            <button onclick="searchFAQ()">
+                Search
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Support Categories -->
+
+    <section class="support">
+
+        <div class="section-heading">
+
+            <p>
+                SUPPORT CENTER
+            </p>
+
+            <h2>
+                What do you need help with?
+            </h2>
+
+        </div>
+
+
+        <div class="support-grid">
+
+
+            <div class="support-card">
+
+                <div class="support-icon">
+                    👤
+                </div>
+
+                <h3>
+                    Account
+                </h3>
+
+                <p>
+                    Get help with registration,
+                    login and account settings.
+                </p>
+
+                <a href="#faq">
+                    View help →
+                </a>
+
+            </div>
+
+
+            <div class="support-card">
+
+                <div class="support-icon">
+                    💳
+                </div>
+
+                <h3>
+                    Payments
+                </h3>
+
+                <p>
+                    Questions about plans,
+                    payments and billing.
+                </p>
+
+                <a href="#faq">
+                    View help →
+                </a>
+
+            </div>
+
+
+            <div class="support-card">
+
+                <div class="support-icon">
+                    📈
+                </div>
+
+                <h3>
+                    Investments
+                </h3>
+
+                <p>
+                    Learn more about our investment
+                    tools and features.
+                </p>
+
+                <a href="#faq">
+                    View help →
+                </a>
+
+            </div>
+
+
+            <div class="support-card">
+
+                <div class="support-icon">
+                    🔐
+                </div>
+
+                <h3>
+                    Security
+                </h3>
+
+                <p>
+                    Learn about account security
+                    and data protection.
+                </p>
+
+                <a href="#faq">
+                    View help →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="faq" id="faq">
+
+        <div class="section-heading">
+
+            <p>
+                FAQ
+            </p>
+
+            <h2>
+                Frequently asked questions
+            </h2>
+
+        </div>
+
+
+        <div class="faq-container">
+
+
+            <div class="faq-item">
+
+                <button onclick="toggleFAQ(this)">
+                    How do I create an account?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Click the Get Started button and
+                        follow the registration process to
+                        create your account.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button onclick="toggleFAQ(this)">
+                    How can I change my password?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Go to your account settings and
+                        select the password option to
+                        update your password.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button onclick="toggleFAQ(this)">
+                    How can I contact support?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        You can contact our support team
+                        using the contact form below.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button onclick="toggleFAQ(this)">
+                    Is my information secure?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        We use appropriate security practices
+                        to protect user information and
+                        account data.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+
+    <section class="contact">
+
+        <div class="contact-content">
+
+            <p class="small-title">
+                CONTACT US
+            </p>
+
+            <h2>
+                Still need help?
+            </h2>
+
+            <p>
+                Send us a message and our support team
+                will get back to you.
+            </p>
+
+
+            <form onsubmit="submitForm(event)">
+
+                <input
+                    type="text"
+                    placeholder="Your name"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="Your email"
+                    required>
+
+                <textarea
+                    placeholder="How can we help?"
+                    rows="5"
+                    required>
+                </textarea>
+
+                <button
+                    type="submit"
+                    class="primary-btn">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-logo">
+            InvestX
+        </div>
+
+        <p>
+            © 2026 InvestX. All rights reserved.
+        </p>
+
+        <p class="disclaimer">
+            Investments are subject to market risks.
+            Please do your own research before making
+            investment decisions.
+        </p>
+
+    </footer>
+
+
+    <script src="sopport.js"></script>
+
+</body>
+
+</html>
