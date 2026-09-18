@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+    line-height: 1.6;
+}
+
+
+/* Navbar */
+
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    border-bottom: 1px solid #eee;
+    background: #fff;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #387ed1;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 35px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+}
+
+.navbar nav a:hover {
+    color: #387ed1;
+}
+
+.login-btn {
+    border: 1px solid #387ed1;
+    background: transparent;
+    color: #387ed1;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #387ed1;
+    color: white;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 80px 10%;
+
+    background: #fafafa;
+}
+
+.hero-content {
+    width: 55%;
+}
+
+.small-title {
+    color: #387ed1;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+.hero h1 span {
+    color: #387ed1;
+}
+
+.hero-text {
+    max-width: 600px;
+
+    margin-top: 25px;
+    margin-bottom: 30px;
+
+    color: #666;
+    font-size: 18px;
+}
+
+
+/* Buttons */
+
+.primary-btn {
+    padding: 13px 25px;
+
+    background: #387ed1;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background: #2d6db7;
+}
+
+
+/* Portfolio Card */
+
+.hero-card {
+    width: 330px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 600;
+}
+
+.positive {
+    color: #159447;
+}
+
+.chart {
+    height: 150px;
+
+    margin: 30px 0;
+
+    position: relative;
+
+    background:
+        linear-gradient(#eee 1px, transparent 1px);
+
+    background-size: 100% 35px;
+
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        140deg,
+        transparent 20%,
+        transparent 25%,
+        #387ed1 26%,
+        #387ed1 28%,
+        transparent 29%,
+        transparent 40%,
+        #387ed1 41%,
+        #387ed1 43%,
+        transparent 44%,
+        transparent 55%,
+        #387ed1 56%,
+        #387ed1 58%,
+        transparent 59%
+    );
+}
+
+.portfolio-value {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.hero-card p {
+    color: #888;
+    font-size: 13px;
+}
+
+
+/* Common Section */
+
+.about,
+.features {
+    padding: 100px 10%;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+.section-heading p {
+    color: #387ed1;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.2;
+
+    margin-top: 10px;
+}
+
+
+/* About */
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.stats {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    min-width: 400px;
+}
+
+.stat-card {
+    padding: 25px;
+
+    border: 1px solid #eee;
+
+    border-radius: 8px;
+}
+
+.stat-card h3 {
+    color: #387ed1;
+    font-size: 30px;
+}
+
+.stat-card p {
+    color: #777;
+}
+
+
+/* Features */
+
+.features {
+    background: #fafafa;
+}
+
+.feature-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.feature-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    border: 1px solid #eee;
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* Mission */
+
+.mission {
+    padding: 120px 10%;
+
+    text-align: center;
+
+    background: #f5f8fc;
+}
+
+.mission-content {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.mission h2 {
+    font-size: 48px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+.mission h2 span {
+    color: #387ed1;
+}
+
+.mission p:not(.small-title) {
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 50px 10%;
+
+    border-top: 1px solid #eee;
+
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+
+    color: #387ed1;
+
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+.disclaimer {
+    max-width: 600px;
+
+    margin: 15px auto;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        gap: 60px;
+
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .stats {
+        min-width: auto;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mission h2 {
+        font-size: 38px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 60px 6%;
+    }
+
+    .about,
+    .features {
+        padding: 70px 6%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+}
