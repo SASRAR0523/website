@@ -1,0 +1,252 @@
+/* Products Hero */
+
+/* Navbar */
+
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    border-bottom: 1px solid #eee;
+    background: #fff;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #387ed1;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 35px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+}
+
+.navbar nav a:hover {
+    color: #387ed1;
+}
+
+.products-hero {
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 10%;
+
+    background: #fafafa;
+}
+
+.products-hero-content {
+    max-width: 800px;
+}
+
+.products-hero h1 {
+    font-size: 60px;
+
+    font-weight: 500;
+
+    line-height: 1.15;
+
+    margin-bottom: 25px;
+}
+
+.products-hero h1 span {
+    color: #387ed1;
+}
+
+.products-hero p:not(.small-title) {
+    color: #666;
+
+    font-size: 18px;
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+
+/* Products */
+
+.products {
+    padding: 100px 10%;
+}
+
+.products-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Product Card */
+
+.product-card {
+    background: #fff;
+
+    padding: 35px;
+
+    min-height: 280px;
+
+    border: 1px solid #e8e8e8;
+
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+
+    border-color: #d8e6f5;
+}
+
+.product-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+
+    background: #f1f6fc;
+
+    border-radius: 8px;
+
+    margin-bottom: 25px;
+}
+
+.product-card h3 {
+    font-size: 21px;
+
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    color: #777;
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+.product-card a {
+    text-decoration: none;
+
+    color: #387ed1;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.product-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* Highlight */
+
+.product-highlight {
+    padding: 120px 10%;
+
+    background: #f5f8fc;
+
+    text-align: center;
+}
+
+.highlight-content {
+    max-width: 750px;
+
+    margin: auto;
+}
+
+.highlight-content h2 {
+    font-size: 48px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+.highlight-content h2 span {
+    color: #387ed1;
+}
+
+.highlight-content p:not(.small-title) {
+    color: #666;
+
+    font-size: 17px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .products-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .products-hero h1 {
+        font-size: 48px;
+    }
+
+    .highlight-content h2 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .products {
+        padding: 70px 6%;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .products-hero {
+        padding: 60px 6%;
+    }
+
+    .products-hero h1 {
+        font-size: 40px;
+    }
+
+    .highlight-content h2 {
+        font-size: 34px;
+    }
+}
+
